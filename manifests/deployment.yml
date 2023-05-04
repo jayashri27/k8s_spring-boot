@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: akannanspringbootapp 
+  name: jayashrimahalespringbootapp 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: akannanspringbootapp
+      app: jayashrimahalespringbootapp 
   template:
     metadata:
       labels:
-        app: akannanspringbootapp 
+        app: jayashrimahalespringbootapp  
     spec:
       containers:
-        - name: akannanspringbootapp 
-          image: myacrrepo431.azurecr.io/akannanspringbootapp
+        - name: jayashrimahalespringbootapp 
+          image: jayashrimahale22/kubernetes-demo:kubernetes-demo
           ports:
           - containerPort: 80

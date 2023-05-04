@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/jayashri27/k8s_spring-boot']])
+                git branch: 'main', credentialsId: 'GitHub_creds', url: 'https://github.com/jayashri27/k8s_demo'
             }
         }
         
